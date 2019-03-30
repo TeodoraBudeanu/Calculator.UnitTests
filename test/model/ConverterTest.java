@@ -1,3 +1,7 @@
+package model;
+
+import main.model.Converter;
+import main.model.DistanceValue;
 import org.junit.Before;
 import org.junit.Test;
 

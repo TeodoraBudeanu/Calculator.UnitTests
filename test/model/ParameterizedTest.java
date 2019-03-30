@@ -1,3 +1,7 @@
+package model;
+
+import main.model.Calculator;
+import main.model.DistanceValue;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

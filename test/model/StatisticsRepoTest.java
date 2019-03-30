@@ -1,3 +1,6 @@
+package model;
+
+import main.model.StatisticsRepo;
 import org.junit.Before;
 import org.junit.Test;
 

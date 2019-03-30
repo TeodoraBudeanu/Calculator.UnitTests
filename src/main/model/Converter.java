@@ -1,3 +1,5 @@
+package main.model;
+
 public class Converter {
 
     private static String[][] convertorTable = {

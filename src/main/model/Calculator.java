@@ -1,5 +1,7 @@
-import Exceptions.StringValidationException;
-import Exceptions.UMValidationException;
+package main.model;
+
+import main.exceptions.StringValidationException;
+import main.exceptions.UMValidationException;
 
 public class Calculator {
 

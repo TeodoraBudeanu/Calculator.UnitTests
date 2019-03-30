@@ -1,5 +1,9 @@
-import Exceptions.StringValidationException;
-import Exceptions.UMValidationException;
+package model;
+
+import main.model.Calculator;
+import main.model.DistanceValue;
+import main.exceptions.StringValidationException;
+import main.exceptions.UMValidationException;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
