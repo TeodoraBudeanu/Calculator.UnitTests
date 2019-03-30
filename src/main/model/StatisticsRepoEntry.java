@@ -17,6 +17,22 @@ public class StatisticsRepoEntry {
         duration = endedAt - startedAt;
     }
 
+    public String getMethodName() {
+        return methodName;
+    }
+
+    public long getStartedAt() {
+        return startedAt;
+    }
+
+    public long getEndedAt() {
+        return endedAt;
+    }
+
+    public long getDuration() {
+        return duration;
+    }
+
     @Override
     public String toString() {
         return "Method: " + methodName + " - duration: " + duration + "ms";
