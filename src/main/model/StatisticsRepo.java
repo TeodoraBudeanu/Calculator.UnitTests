@@ -13,7 +13,7 @@ public class StatisticsRepo {
     public long calculateAvgDuration() {
         long sum = 0;
         for (StatisticsRepoEntry e : repo) {
-            sum += e.duration;
+            sum += e.getDuration();
         }
         return sum / repo.size();
     }
@@ -21,7 +21,7 @@ public class StatisticsRepo {
     public long assertNoOfMethods() {
         Set<String> set = new HashSet<>();
         for (StatisticsRepoEntry e : repo) {
-            set.add(e.methodName);
+            set.add(e.getMethodName());
         }
         return set.size();
     }
@@ -29,10 +29,10 @@ public class StatisticsRepo {
     public long mostMethodsDuration() {
         Map<Long, Integer> map = new HashMap<>();
         for (StatisticsRepoEntry e : repo) {
-            if (map.values().contains(e.duration)) {
-                map.put(e.duration, map.get(e.methodName) + 1);
+            if (map.values().contains(e.getDuration())) {
+                map.put(e.getDuration(), map.get(e.getMethodName()) + 1);
             } else
-                map.put(e.duration, 1);
+                map.put(e.getDuration(), 1);
         }
         int max = 0;
         for (Map.Entry<Long, Integer> e : map.entrySet()) {
