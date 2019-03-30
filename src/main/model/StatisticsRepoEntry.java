@@ -2,13 +2,13 @@ package main.model;
 
 public class StatisticsRepoEntry {
 
-    String methodName;
-    long startedAt;
-    long endedAt;
-    long duration;
+    private String methodName;
+    private long startedAt;
+    private long endedAt;
+    private long duration;
 
     public StatisticsRepoEntry(String methodName, long startedAt, long endedAt) {
-        if (methodName == null){
+        if (methodName == null) {
             throw new NullPointerException();
         }
         this.methodName = methodName;
