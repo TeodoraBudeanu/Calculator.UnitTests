@@ -2,24 +2,24 @@ package main.model;
 
 public class StatisticsRepoEntry {
 
-    String MethodName;
+    String methodName;
     long startedAt;
-    long EndedAt;
+    long endedAt;
     long duration;
 
     public StatisticsRepoEntry(String methodName, long startedAt, long endedAt) {
         if (methodName == null){
             throw new NullPointerException();
         }
-        MethodName = methodName;
+        this.methodName = methodName;
         this.startedAt = startedAt;
-        EndedAt = endedAt;
+        this.endedAt = endedAt;
         duration = endedAt - startedAt;
     }
 
     @Override
     public String toString() {
-        return "Method: " + MethodName + " - duration: " + duration + "ms";
+        return "Method: " + methodName + " - duration: " + duration + "ms";
     }
 
 

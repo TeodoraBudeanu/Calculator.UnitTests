@@ -21,7 +21,7 @@ public class StatisticsRepo {
     public long assertNoOfMethods() {
         Set<String> set = new HashSet<>();
         for (StatisticsRepoEntry e : repo) {
-            set.add(e.MethodName);
+            set.add(e.methodName);
         }
         return set.size();
     }
@@ -30,7 +30,7 @@ public class StatisticsRepo {
         Map<Long, Integer> map = new HashMap<>();
         for (StatisticsRepoEntry e : repo) {
             if (map.values().contains(e.duration)) {
-                map.put(e.duration, map.get(e.MethodName) + 1);
+                map.put(e.duration, map.get(e.methodName) + 1);
             } else
                 map.put(e.duration, 1);
         }
